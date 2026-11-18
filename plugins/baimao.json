@@ -1,0 +1,14 @@
+{
+  "api": "1",
+  "version": "1.0",
+  "name": "baimao",
+  "iconUrl": "https://www.baimaodm.com/favicon.ico",
+  "baseUrl": "https://www.baimaodm.com/",
+  "searchUrl": "https://www.baimaodm.com/s_all?ex=1&kw={keyword}",
+  "searchList": "//div[4]/div[2]/div[1]/ul/li",
+  "searchName": "//h2/a",
+  "searchLink": "//h2/a",
+  "lineNames": "",
+  "lineList": "//div[2]/div[2]/div[8]/div/div/ul",
+  "episode": "//li/a"
+}

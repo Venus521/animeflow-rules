@@ -1,0 +1,59 @@
+{
+  "api": "2",
+  "version": "1.0",
+  "name": "sorani",
+  "iconUrl": "https://www.sorani.net/favicon.ico",
+  "baseUrl": "https://www.sorani.net/",
+  "searchUrl": "",
+  "searchList": "",
+  "searchName": "",
+  "searchLink": "",
+  "lineNames": "",
+  "lineList": "",
+  "episode": "",
+  "searchMode": "api",
+  "chapterMode": "api",
+  "searchApiConfig": {
+    "request": {
+      "method": "GET",
+      "url": "https://api.sorani.cc/sorani-cms/api/video",
+      "query": {
+        "page": 1,
+        "size": 50,
+        "keyword": "{keyword}",
+        "enabled": true,
+        "sortMode": "latest",
+        "sortDesc": false
+      }
+    },
+    "listPath": "$.data.records[*]",
+    "namePath": "$.title",
+    "sourcePath": "$.id"
+  },
+  "chapterApiConfig": {
+    "request": {
+      "method": "GET",
+      "url": "https://api.sorani.cc/sorani-cms/api/video/{source}"
+    },
+    "format": "nested",
+    "roadsPath": "$.data",
+    "roadNamePath": "",
+    "episodesPath": "$.episodes[*]",
+    "episodeNamePath": "$.episodeLabel",
+    "episodeUrlPath": "$.episodeOrder",
+    "episodePage": {
+      "url": "https://www.sorani.net/anime/mal/{source}/episode/{episodeUrl}",
+      "query": {}
+    }
+  },
+  "antiCrawlerConfig": {
+    "enabled": false,
+    "captchaType": 1,
+    "captchaImage": "",
+    "captchaInput": "",
+    "captchaButton": "",
+    "captchaDetectType": 1,
+    "captchaDetectValue": "",
+    "captchaScript": ""
+  }
+}

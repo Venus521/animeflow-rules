@@ -1,0 +1,30 @@
+{
+  "api": "2",
+  "version": "1.2",
+  "name": "dalvdm",
+  "iconUrl": "https://www.sbdl.cc/favicon.ico",
+  "baseUrl": "https://www.sbdl.cc/",
+  "searchUrl": "",
+  "searchList": "",
+  "searchName": "",
+  "searchLink": "",
+  "lineNames": "",
+  "lineList": "//div[starts-with(@id, 'playlist')][contains(@class, 'lists-box')]",
+  "episode": ".//a[contains(@href, '/index.php/vod/play/')]",
+  "searchMode": "api",
+  "chapterMode": "xpath",
+  "searchApiConfig": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.sbdl.cc/index.php/ajax/suggest",
+      "query": {
+        "mid": "1",
+        "wd": "{keyword}"
+      }
+    },
+    "listPath": "$.list[*]",
+    "namePath": "$.name",
+    "sourcePath": "$.id",
+    "sourceTemplate": "https://www.sbdl.cc/index.php/vod/detail/id/{source}.html"
+  }
+}

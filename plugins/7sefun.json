@@ -1,0 +1,14 @@
+{
+  "api": "1",
+  "version": "1.3",
+  "name": "七色动漫",
+  "iconUrl": "https://www.7sefun.top/favicon.ico",
+  "baseUrl": "https://www.7sefun.top/",
+  "searchUrl": "https://www.7sefun.top/vodsearch/-------------.html?wd={keyword}",
+  "searchList": "//div[2]/div[2]/div[2]/div[2]/div",
+  "searchName": "//div[2]/text()",
+  "searchLink": "//a",
+  "lineNames": "",
+  "lineList": "//div[2]/div[2]/div[2]/div/div[2]/div[1]//div",
+  "episode": "//a"
+}

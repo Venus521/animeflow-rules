@@ -1,0 +1,14 @@
+{
+  "api": "1",
+  "version": "1.4",
+  "name": "akianime",
+  "iconUrl": "https://www.akianime.cc/favicon.ico",
+  "baseUrl": "https://www.akianime.cc/",
+  "searchUrl": "https://www.akianime.cc/bgmsearch/-------------.html?wd={keyword}",
+  "searchList": "//div[@class='vod-detail style-detail cor4 search-list']",
+  "searchName": "//div/div[2]/a/h3",
+  "searchLink": "//div/div[2]/div/div[1]/a",
+  "lineNames": "",
+  "lineList": "//ul[@class='anthology-list-play size']",
+  "episode": "//li/a"
+}

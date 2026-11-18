@@ -1,0 +1,30 @@
+{
+  "api": "2",
+  "version": "2.4",
+  "name": "路慢慢动漫",
+  "iconUrl": "https://www.lmm22.com/favicon.ico",
+  "baseUrl": "https://www.lmm22.com/",
+  "searchUrl": "",
+  "searchList": "",
+  "searchName": "",
+  "searchLink": "",
+  "lineNames": "",
+  "lineList": "//div[contains(@class, 'module-player-list')]",
+  "episode": ".//a[contains(@href, '/play/')]",
+  "searchMode": "api",
+  "chapterMode": "xpath",
+  "searchApiConfig": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.lmm22.com/index.php/ajax/suggest",
+      "query": {
+        "mid": "1",
+        "wd": "{keyword}"
+      }
+    },
+    "listPath": "$.list[*]",
+    "namePath": "$.name",
+    "sourcePath": "$.id",
+    "sourceTemplate": "https://www.lmm22.com/index.php/vod/detail/id/{source}.html"
+  }
+}

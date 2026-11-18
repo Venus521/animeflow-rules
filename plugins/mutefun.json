@@ -1,0 +1,24 @@
+{
+  "api": "1",
+  "version": "1.6",
+  "name": "mutefun",
+  "iconUrl": "https://www.mutedm.com/favicon.ico",
+  "baseUrl": "https://www.mutedm.com",
+  "searchUrl": "https://www.mutedm.com/search?q={keyword}",
+  "searchList": "//section[contains(@class,'search-results-section')]//a[contains(@class,'video-card')]",
+  "searchName": "//span[contains(@class,'video-card-title')]",
+  "searchLink": ".",
+  "lineNames": "",
+  "lineList": "//div[contains(@class,'episode-panel')]//div[contains(@class,'episode-list')]",
+  "episode": "//a",
+  "antiCrawlerConfig": {
+    "enabled": true,
+    "captchaType": 1,
+    "captchaImage": "//form[contains(@action,'/captcha/verify')]//img",
+    "captchaInput": "//input[@id='gate-answer']",
+    "captchaButton": "//form[contains(@action,'/captcha/verify')]//button[@type='submit']",
+    "captchaDetectType": 1,
+    "captchaDetectValue": "//form[contains(@action,'/captcha/verify')]",
+    "captchaScript": ""
+  }
+}

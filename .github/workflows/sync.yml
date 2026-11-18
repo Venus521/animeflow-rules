@@ -1,0 +1,40 @@
+name: 同步 Kazumi 规则
+
+on:
+  schedule:
+    # 每天 UTC 20:00（北京时间次日 04:00）自动同步一次
+    - cron: '0 20 * * *'
+  workflow_dispatch: # 也支持在 Actions 页面手动点一次
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出本仓库
+        uses: actions/checkout@v4
+
+      - name: 设置 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 拉取 Kazumi 规则仓库
+        run: git clone --depth 1 https://github.com/Predidit/KazumiRules.git /tmp/KazumiRules
+
+      - name: 转换为 AnimeFlow 格式
+        run: node scripts/convert.js /tmp/KazumiRules ./plugins
+
+      - name: 提交变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- plugins; then
+            echo "规则没有变化，跳过提交"
+            exit 0
+          fi
+          git add plugins
+          git commit -m "chore: 同步 Kazumi 规则 $(date -u +%Y-%m-%d)"
+          git push

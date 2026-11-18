@@ -1,0 +1,40 @@
+{
+  "api": "2",
+  "version": "1.1",
+  "name": "月之祠",
+  "iconUrl": "https://www.moonci.com/favicon.ico",
+  "baseUrl": "https://www.moonci.com/",
+  "searchUrl": "",
+  "searchList": "",
+  "searchName": "",
+  "searchLink": "",
+  "lineNames": "",
+  "lineList": "//div[contains(@class, 'hl-play-source')]//ul[contains(@class, 'hl-plays-list')]",
+  "episode": ".//a[contains(@href, '/play/')]",
+  "searchMode": "api",
+  "chapterMode": "xpath",
+  "searchApiConfig": {
+    "request": {
+      "method": "GET",
+      "url": "https://www.moonci.com/index.php/ajax/suggest",
+      "query": {
+        "mid": "1",
+        "wd": "{keyword}"
+      }
+    },
+    "listPath": "$.list[*]",
+    "namePath": "$.name",
+    "sourcePath": "$.id",
+    "sourceTemplate": "https://www.moonci.com/anime/{source}.html"
+  },
+  "antiCrawlerConfig": {
+    "enabled": false,
+    "captchaType": 1,
+    "captchaImage": "",
+    "captchaInput": "",
+    "captchaButton": "",
+    "captchaDetectType": 1,
+    "captchaDetectValue": "",
+    "captchaScript": ""
+  }
+}

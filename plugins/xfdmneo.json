@@ -1,0 +1,14 @@
+{
+  "api": "1",
+  "version": "1.1",
+  "name": "xfdmneo",
+  "iconUrl": "https://dm1.xfdm.pro/favicon.ico",
+  "baseUrl": "https://dm1.xfdm.pro/",
+  "searchUrl": "https://dm1.xfdm.pro/search.html?wd={keyword}",
+  "searchList": "//div[@class='public-list-box search-box flex rel']",
+  "searchName": "//div[3]/div[1]/div[1]",
+  "searchLink": "//div[3]/div[2]/a[1]",
+  "lineNames": "",
+  "lineList": "//ul[@class='anthology-list-play size']",
+  "episode": "//li/a"
+}

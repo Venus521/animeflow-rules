@@ -1,0 +1,14 @@
+{
+  "api": "1",
+  "version": "1.4",
+  "name": "动漫巴士",
+  "iconUrl": "https://dmbus.cc/favicon.ico",
+  "baseUrl": "https://dmbus.cc/",
+  "searchUrl": "https://dmbus.cc/s----------.html?wd={keyword}",
+  "searchList": "//div/div[3]/ul/li",
+  "searchName": "//div/a[2]",
+  "searchLink": "//div/a[2]",
+  "lineNames": "",
+  "lineList": "//div/div[4]/div/ul",
+  "episode": "//li/a"
+}
