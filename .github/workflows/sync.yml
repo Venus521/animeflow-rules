@@ -24,8 +24,11 @@ jobs:
       - name: 拉取 Kazumi 规则仓库
         run: git clone --depth 1 https://github.com/Predidit/KazumiRules.git /tmp/KazumiRules
 
-      - name: 转换为 AnimeFlow 格式
-        run: node scripts/convert.js /tmp/KazumiRules ./plugins
+      - name: 转换为 AnimeFlow 格式（先输出到临时目录）
+        run: node scripts/convert.js /tmp/KazumiRules /tmp/kz
+
+      - name: 并入现有规则（官方源优先，只追加不覆盖）
+        run: node scripts/merge.js /tmp/kz ./plugins
 
       - name: 提交变更
         run: |
