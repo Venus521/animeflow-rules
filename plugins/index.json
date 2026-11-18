@@ -1,58 +1,114 @@
 [
   {
+    "name": "七色动漫",
+    "version": "1.0.4",
+    "icon": "https://www.7sefun.top//pc/img/favicon.ico",
+    "path": "7sefun.json",
+    "updateTime": "1791033941970",
+    "api": "1"
+  },
+  {
+    "name": "girigiri愛動漫",
+    "version": "1.2.1",
+    "icon": "https://ani.girigirilove.com/brand/icon.png",
+    "path": "girigiri.json",
+    "updateTime": "1792930715169",
+    "api": "2"
+  },
+  {
+    "name": "萌道动漫",
+    "version": "1.0.0",
+    "icon": "https://www.gpjda.com//statics/img/favicon.ico",
+    "path": "gpjda.json",
+    "updateTime": "1791033941970",
+    "api": "1"
+  },
+  {
+    "name": "动漫KIKU",
+    "version": "1.0.0",
+    "icon": "https://www.dmmiku.com/template/conch/asset/img/favicon.png",
+    "path": "yishijie.json",
+    "updateTime": "1791033941970",
+    "api": "1"
+  },
+  {
     "name": "动漫巴士",
-    "version": "1.4",
+    "version": "1.0.1",
     "icon": "https://dmbus.cc/favicon.ico",
-    "path": "DM84.json",
-    "updateTime": "1795014593551",
+    "path": "dmbus.json",
+    "updateTime": "1791033941970",
     "api": "1"
   },
   {
     "name": "橘子动漫",
-    "version": "1.2",
-    "icon": "https://www.mgnacg.com/media/favicon.ico",
+    "version": "1.0.1",
+    "icon": "https://r2img.nanoacg.com/favicon.png",
     "path": "mgnacg.json",
-    "updateTime": "1795014593585",
-    "api": "2"
-  },
-  {
-    "name": "路慢慢动漫",
-    "version": "2.4",
-    "icon": "https://www.lmm22.com/favicon.ico",
-    "path": "LMM.json",
-    "updateTime": "1795014593578",
-    "api": "2"
-  },
-  {
-    "name": "七色动漫",
-    "version": "1.3",
-    "icon": "https://www.7sefun.top/favicon.ico",
-    "path": "7sefun.json",
-    "updateTime": "1795014593516",
+    "updateTime": "1791033941970",
     "api": "1"
   },
   {
-    "name": "月之祠",
-    "version": "1.1",
-    "icon": "https://www.moonci.com/favicon.ico",
-    "path": "moonci.json",
-    "updateTime": "1795014593596",
-    "api": "2"
+    "name": "mutefun",
+    "version": "1.0.2",
+    "icon": "https://www.mutefun.tv/upload/mxprocms/20220822-1/e68e718ceae9622e4646ca725d182831.png",
+    "path": "mutefun.json",
+    "updateTime": "1791033941970",
+    "api": "1"
   },
   {
     "name": "AGE动漫",
-    "version": "1.6",
-    "icon": "https://www.agedm.io/favicon.ico",
-    "path": "AGE.json",
-    "updateTime": "1795014593524",
+    "version": "1.0.0",
+    "icon": "https://cdn.aqdstatic.com:966/large/008bLEJGgy1hc40ennm4uj306o06omx9.jpg",
+    "path": "age.json",
+    "updateTime": "1791033941970",
+    "api": "1"
+  },
+  {
+    "name": "MX动漫",
+    "version": "1.0.0",
+    "icon": "https://www.dcc3.com/favicon.ico",
+    "path": "mxdm.json",
+    "updateTime": "1791065388104",
+    "api": "1"
+  },
+  {
+    "name": "嘀嗒影视",
+    "version": "1.0.0",
+    "icon": "https://www.didahd.xyz/template/mytheme/statics/img/favicon.ico",
+    "path": "didahd.json",
+    "updateTime": "1791327811606",
+    "api": "1"
+  },
+  {
+    "name": "路慢慢动漫",
+    "version": "1.0.0",
+    "icon": "https://www.lmm85.com/template/jable/statics/icon/favicon-32x32.png",
+    "path": "lmm.json",
+    "updateTime": "1793622049240",
+    "api": "3"
+  },
+  {
+    "name": "月之祠",
+    "version": "1.0.0",
+    "icon": "https://www.moonci.com/template/conch/asset/img/favicon.png",
+    "path": "moonci.json",
+    "updateTime": "1793627162343",
     "api": "1"
   },
   {
     "name": "akianime",
-    "version": "1.4",
-    "icon": "https://www.akianime.cc/favicon.ico",
+    "version": "1.0.0",
+    "icon": "https://www.akianime.cc/template/dsn2/static/img/icon.png",
     "path": "akianime.json",
-    "updateTime": "1795014593530",
+    "updateTime": "1793631000885",
+    "api": "1"
+  },
+  {
+    "name": "anime7",
+    "version": "1.0.0",
+    "icon": "https://ani7.b-cdn.net/upload/logo/icon.png",
+    "path": "anime7.json",
+    "updateTime": "1793631000885",
     "api": "1"
   },
   {
@@ -77,30 +133,6 @@
     "icon": "https://m.ezdmw.org/favicon.ico",
     "path": "ezdmw.json",
     "updateTime": "1795014593559",
-    "api": "1"
-  },
-  {
-    "name": "girigiri愛動漫",
-    "version": "2.7",
-    "icon": "https://ani.girigirilove.com/favicon.ico",
-    "path": "giriGiriLove.json",
-    "updateTime": "1795014593567",
-    "api": "2"
-  },
-  {
-    "name": "mutefun",
-    "version": "1.6",
-    "icon": "https://www.mutedm.com/favicon.ico",
-    "path": "mutefun.json",
-    "updateTime": "1795014593608",
-    "api": "1"
-  },
-  {
-    "name": "MX动漫",
-    "version": "2.4",
-    "icon": "https://www.dcc3.com/favicon.ico",
-    "path": "MXdm.json",
-    "updateTime": "1795014593616",
     "api": "1"
   },
   {

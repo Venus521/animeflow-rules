@@ -1,29 +1,21 @@
 {
-  "api": "2",
-  "version": "1.2",
+  "api": "1",
+  "version": "1.0.1",
   "name": "橘子动漫",
-  "iconUrl": "https://www.mgnacg.com/media/favicon.ico",
-  "baseUrl": "https://www.mgnacg.com/media/",
-  "searchUrl": "",
-  "searchList": "",
-  "searchName": "",
-  "searchLink": "",
-  "lineNames": "",
-  "lineList": "//ul[@class='anthology-list-play size']",
-  "episode": ".//li/a",
-  "searchMode": "api",
-  "chapterMode": "xpath",
-  "searchApiConfig": {
-    "request": {
-      "method": "GET",
-      "url": "https://www.mgnacg.com/index.php/ajax/suggest",
-      "query": {
-        "mid": "1",
-        "wd": "{keyword}"
-      }
-    },
-    "listPath": "$.list[*]",
-    "namePath": "$.name",
-    "sourcePath": "$.id"
+  "iconUrl": "https://r2img.nanoacg.com/favicon.png",
+  "baseUrl": "https://www.mgnacg.com/",
+  "searchUrl": "https://www.mgnacg.com/search/-------------/?wd={keyword}",
+  "searchList": "//div[@class='public-list-box search-box flex rel']",
+  "searchName": "/div[3] /div[1] /div[1]",
+  "searchLink": "/div[3] /div[2] /a[1]",
+  "lineNames": "//div[@class='box-width cor5'] /div[2] //div[@class='swiper-wrapper'] //a",
+  "lineList": "//div[@class='box-width cor5'] /div[2] /div[2] //ul",
+  "episode": "//a",
+  "antiCrawlerConfig": {
+    "enabled": true,
+    "captchaType": 1,
+    "captchaImage": "//img[@class='ds-verify-img']",
+    "captchaInput": "//div[3]/div[2]/div/div/input",
+    "captchaButton": "//div[3]/div[2]/p/input"
   }
 }

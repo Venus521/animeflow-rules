@@ -1,40 +1,14 @@
 {
-  "api": "2",
-  "version": "1.1",
+  "api": "1",
+  "version": "1.0.0",
   "name": "月之祠",
-  "iconUrl": "https://www.moonci.com/favicon.ico",
+  "iconUrl": "https://www.moonci.com/template/conch/asset/img/favicon.png",
   "baseUrl": "https://www.moonci.com/",
-  "searchUrl": "",
-  "searchList": "",
-  "searchName": "",
-  "searchLink": "",
-  "lineNames": "",
-  "lineList": "//div[contains(@class, 'hl-play-source')]//ul[contains(@class, 'hl-plays-list')]",
-  "episode": ".//a[contains(@href, '/play/')]",
-  "searchMode": "api",
-  "chapterMode": "xpath",
-  "searchApiConfig": {
-    "request": {
-      "method": "GET",
-      "url": "https://www.moonci.com/index.php/ajax/suggest",
-      "query": {
-        "mid": "1",
-        "wd": "{keyword}"
-      }
-    },
-    "listPath": "$.list[*]",
-    "namePath": "$.name",
-    "sourcePath": "$.id",
-    "sourceTemplate": "https://www.moonci.com/anime/{source}.html"
-  },
-  "antiCrawlerConfig": {
-    "enabled": false,
-    "captchaType": 1,
-    "captchaImage": "",
-    "captchaInput": "",
-    "captchaButton": "",
-    "captchaDetectType": 1,
-    "captchaDetectValue": "",
-    "captchaScript": ""
-  }
+  "searchUrl": "https://www.moonci.com/search/-------------.html?wd={keyword}",
+  "searchList": "//ul[contains(@class, 'hl-one-list')]/li[contains(@class, 'hl-list-item')]",
+  "searchName": "//div[@class='hl-item-content'] /div[1] /a",
+  "searchLink": "//div[@class='hl-item-content'] /div[1] /a",
+  "lineNames": "//div[@class='hl-play-source hl-hidden'] /div[1] //a",
+  "lineList": "//div[@class='hl-play-source hl-hidden'] //div[@class='hl-tabs-box hl-fadeIn'] //ul",
+  "episode": "//a"
 }
